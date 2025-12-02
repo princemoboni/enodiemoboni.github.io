@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Navigation Bar */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: #0073e6;
+}
+
+/* Header Section */
+header {
+  background: purple;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+
+}
+p{
+    text-align: center;
+}
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Section */
+.btn {
+  display: inline-block;
+  background: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005bb5;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* --- Fancy Nav Animation  */
+
+nav .nav-links li {
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+nav .nav-links li a {
+  text-transform: uppercase;
+  color: #ebebeb;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect (background & spring animation) */
+nav .nav-links li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  animation: spring 300ms ease-out;
+}
+
+nav .nav-links li:hover a {
+  color: #27262c;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 #ef816c;
+}
+
+/* Pressed/clicked effect */
+nav .nav-links li:active {
+  transform: translateY(4px);
+}
+
+/* Spring Keyframes */
+@keyframes spring {
+  15% {
+    transform-origin: center center;
+    transform: scale(1.2, 1.1);
+  }
+  40% {
+    transform-origin: center center;
+    transform: scale(0.95, 0.95);
+  }
+  75% {
+    transform-origin: center center;
+    transform: scale(1.05, 1);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
